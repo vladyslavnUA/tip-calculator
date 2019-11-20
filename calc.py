@@ -2,6 +2,34 @@ import os
 import signal
 import math
 
+def welcome():
+    #time.sleep(1)
+    print()
+    print("welcome to the tip calculator. here you will be able to "
+          "calculate your total based on the tip percentage and how "
+          "many people you want to split it with. created by vladyslav nykoliuk")
+    print()
+    menu()
+
+def menu():
+    print("     ******** MAIN MENU ********          ")
+    while True:
+        try:
+            option = int(input("""
+    [1]: calculate total + tip
+
+    please enter your choice > """))
+            print()
+        except ValueError:
+            print("please select an option")
+            continue
+        else:
+            break
+    print()
+    
+    if option == "1":
+        calculate()
+
 def calculate():
     #validate user input for float
     while True:
@@ -90,6 +118,6 @@ def again():
         
 #TODO: create a menu displaying different available calculations
         
-calculate()
-
+#calculate()
+welcome()
 
