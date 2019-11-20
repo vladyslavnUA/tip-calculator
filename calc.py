@@ -8,7 +8,7 @@ def calculate():
         try:
             total = float(input("what is your bill total? (i.e. $22.45) $ "))
         except ValueError:
-            print("enter a number")
+            print("please enter a number")
             continue
         else:
             break
@@ -17,7 +17,7 @@ def calculate():
         try:
             tip = float(input("what is the tip percentage (%)? "))
         except ValueError:
-            print("enter a number")
+            print("please enter a number")
             continue
         else:
             break
@@ -72,10 +72,10 @@ def again():
     while True:
         try:
             q = input("do you want to calculate the tip again? (y or n)\n > ")
+            if q not in ['y', 'n']:
+                print("type in y or n")
+                continue
         except ValueError:
-            print("type in y or n")
-            continue
-        if ask not in ['y', 'n']:
             print("type in y or n")
             continue
         else:
