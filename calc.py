@@ -57,6 +57,7 @@ def again():
         calculate()
     else:
         print('[ending program...]')
+        #ends the program
         os.kill(os.getpid(),signal.SIGKILL)
         
 #TODO: create a menu displaying different available calculations
