@@ -9,26 +9,7 @@ def welcome():
           "calculate your total based on the tip percentage and how "
           "many people you want to split it with. created by vladyslav nykoliuk")
     print()
-    menu()
-
-def menu():
-    print("     ******** MAIN MENU ********          ")
-    while True:
-        try:
-            option = int(input("""
-    [1]: calculate total + tip
-
-    please enter your choice > """))
-            print()
-        except ValueError:
-            print("please select an option")
-            continue
-        else:
-            break
-    print()
-    
-    if option == "1":
-        calculate()
+    omenu()
 
 def calculate():
     #validate user input for float
@@ -115,9 +96,27 @@ def again():
         print('[ending program...]')
         #ends the program
         os.kill(os.getpid(),signal.SIGKILL)
+def omenu():
+    menu = {}
+    menu['[1]: ']="calculate total + tip" 
+    menu['[2]: ']="quit/exit"
+    while True:
+        options=menu.keys()
+        sorted(options)
+        for entry in options:
+            print (entry, menu[entry])
+
+        selection=input("Please Select:")
         
-#TODO: create a menu displaying different available calculations
-        
+        if selection =='1':
+            calculate()
+        elif selection == '2':
+            print('[ending program...]')
+            #ends the program
+            os.kill(os.getpid(),signal.SIGKILL)
+            break
+        else: 
+            print ("Unknown Option Selected!")
 #calculate()
 welcome()
 
