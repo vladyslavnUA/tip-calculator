@@ -41,7 +41,18 @@ def split():
     again()
 
 def again():
-    q = input("do you want to calculate the tip again? (y or n)\n > ")
+    while True:
+        try:
+            q = input("do you want to calculate the tip again? (y or n)\n > ")
+        except ValueError:
+            print("type in y or n")
+            continue
+        if ask not in ['y', 'n']:
+            print("type in y or n")
+            continue
+        else:
+            break
+        
     if q == 'y':
         calculate()
     else:
