@@ -16,7 +16,14 @@ def split():
         print("each person's cut is $", final)
 
 #TODO: define again(), allowing users to calculate again
-
+def again():
+    q = input("do you want to calculate the tip again? (y or n)\n > ")
+    if q == 'y':
+        print('\n')
+        calculate()
+    else:
+        ####
+        
 #TODO: create a menu displaying different available calculations
         
 calculate()
