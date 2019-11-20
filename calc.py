@@ -3,4 +3,6 @@ def calculate():
     tip = float(input("what is the tip percentage (%)? "))
     global calc
     calc = (total * (tip / 100)) + total
-
+    print(f'your bill total after a {tip} % tip is ${calc}')
+    split()
+    return calc
