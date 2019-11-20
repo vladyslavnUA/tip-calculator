@@ -12,4 +12,8 @@ def split():
     ask = input("do you want to split the bill with anyone? type y or n\n > ")
     if ask == 'y':
         ask2 = int(input("how many people do you want to split the bill with?\n > "))
+        final = (t / ask2)
+        print("each person's cut is $", final)
+calculate()
+
 
