@@ -14,6 +14,11 @@ def split():
         ask2 = int(input("how many people do you want to split the bill with?\n > "))
         final = (t / ask2)
         print("each person's cut is $", final)
+
+#TODO: define again(), allowing users to calculate again
+
+#TODO: create a menu displaying different available calculations
+        
 calculate()
 
 
