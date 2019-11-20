@@ -6,3 +6,7 @@ def calculate():
     print(f'your bill total after a {tip} % tip is ${calc}')
     split()
     return calc
+
+def split():
+    t = calc
+    ask = input("do you want to split the bill with anyone? type y or n\n > ")
