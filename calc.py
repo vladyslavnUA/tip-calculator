@@ -10,3 +10,6 @@ def calculate():
 def split():
     t = calc
     ask = input("do you want to split the bill with anyone? type y or n\n > ")
+    if ask == 'y':
+        ask2 = int(input("how many people do you want to split the bill with?\n > "))
+
