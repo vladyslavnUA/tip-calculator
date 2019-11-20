@@ -1,17 +1,27 @@
 import os
 import signal
+import math
 
 def calculate():
     #validate user input for float
     while True:
         try:
             total = float(input("what is your bill total? (i.e. $22.45) $ "))
-            tip = float(input("what is the tip percentage (%)? "))
         except ValueError:
-            print("enter a number please")
+            print("enter a number")
             continue
         else:
             break
+        #validate tip percentage
+    while True:
+        try:
+            tip = float(input("what is the tip percentage (%)? "))
+        except ValueError:
+            print("enter a number")
+            continue
+        else:
+            break
+        
     #global calc is available throughout the script
     global calc
     #entire calculation
@@ -28,15 +38,16 @@ def split():
     while True:
         try:
             ask = input("do you want to split the bill with anyone? type y or n\n > ")
+            if ask not in ['y', 'n']:
+                print("type in y or n")
+                #will keep asking the user
+                continue
         except ValueError:
             print("type in y or n")
             continue
-        if ask not in ['y', 'n']:
-            print("type in y or n")
-            #will keep asking the user
-            continue
         else:
             break
+                
     #calculating total with # of people
     if ask == 'y':
         while True:
