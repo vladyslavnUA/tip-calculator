@@ -20,7 +20,17 @@ def calculate():
 
 def split():
     t = calc
-    #
+    while True:
+        try:
+            ask = input("do you want to split the bill with anyone? type y or n\n > ")
+        except ValueError:
+            print("type in y or n")
+            continue
+        if ask not in ['y', 'n']:
+            print("type in y or n")
+            continue
+        else:
+            break
         
     if ask == 'y':
         ask2 = int(input("how many people do you want to split the bill with?\n > "))
