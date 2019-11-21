@@ -6,9 +6,7 @@ Welcome to the tip-calculator :octocat:, a cross-platform mini-software where yo
 [![Build Status](https://travis-ci.org/vladyslavnUA/tip-calculator.svg?branch=master)](https://travis-ci.org/vladyslavnUA/tip-calculator)
 
 ## Demo
-![Live Demo](https://s6.ezgif.com/save/ezgif-6-052090670e8f.gif)
-
-*i apoligize for the speed of the demo, the converter automatically slows it down :weary:
+working on it...
 
 ## Tech/Framework Used
 <b>Built with</b>
