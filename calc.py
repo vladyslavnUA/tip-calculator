@@ -10,7 +10,10 @@ def welcome():
           "many people you want to split it with. created by vladyslav nykoliuk")
     print()
     omenu()
-
+    
+#def backone():
+    #
+    
 def calculate():
     #validate user input for float
     while True:
@@ -96,27 +99,58 @@ def again():
         print('[ending program...]')
         #ends the program
         os.kill(os.getpid(),signal.SIGKILL)
-def omenu():
-    menu = {}
-    menu['[1]: ']="calculate total + tip" 
-    menu['[2]: ']="quit/exit"
+
+def about():
+    print("about this project")
+    print("")
+    print("this is a personal project, created by vladyslav nykoliuk, originally published "
+          "on github (https://github.com/vladyslavnUA/tip-calculator). if you have any suggestions, "
+          "questions or features you would like to add, feel free to open a pull request on my repository")
+    print("")
+
+    #validating user input for number
     while True:
-        options=menu.keys()
+        try:
+            to_home = int(input("enter any # to go back to the main menu. > "))
+            print("")
+            
+            if to_home == '1':
+                welcome()
+        except ValueError:
+            print("unknown option selected!")
+            continue
+        else:
+            break
+    
+def omenu():
+    print("     ******** MAIN MENU ********          ")
+    menu = {}
+    menu['   [1]: '] = "calculate total + tip"
+    menu['   [2]: '] = "about"
+    menu['   [3]: '] = "quit/exit"
+    print("")
+    while True:
+        options = menu.keys()
         sorted(options)
         for entry in options:
-            print (entry, menu[entry])
-
-        selection=input("Please Select:")
+            print(entry, menu[entry])
+            
+        print("")
+        selection = input("enter your choice > ")
         
-        if selection =='1':
+        if selection == '1':
+            print("")
             calculate()
         elif selection == '2':
+            print("")
+            about()
+        elif selection == '3':
             print('[ending program...]')
             #ends the program
             os.kill(os.getpid(),signal.SIGKILL)
             break
         else: 
-            print ("Unknown Option Selected!")
+            print("unknown option selected!")
 #calculate()
 welcome()
 
