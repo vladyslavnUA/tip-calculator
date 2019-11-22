@@ -13,7 +13,7 @@ working on it...
 - [Python](https://www.python.org/)
 
 ## Features
-Surely, more features to come but as of now, the project runs fluidly across the three main platforms: ```macOS```, ```windows``` and ```unix```. Feel free to open pull requests to pitch in some code for new features.
+Surely, more features to come but as of now, the project runs fluidly across the ```macOS```platform. Feel free to open pull requests to pitch in some code for new features.
 
 ## Installation
 In order to get this mini-software on your operating system, head over to the [releases](https://github.com/vladyslavnUA/tip-calculator/releases) github page and download ```calc.zip```
