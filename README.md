@@ -3,7 +3,7 @@
 Welcome to the tip-calculator :octocat:, a cross-platform mini-software where you can calculate your bill total, and split it.
 
 ## Build Status
-[![Build Status](https://travis-ci.org/vladyslavnUA/tip-calculator.svg?branch=master)](https://travis-ci.org/vladyslavnUA/tip-calculator)
+working on it...
 
 ## Demo
 working on it...
