@@ -6,7 +6,7 @@ Welcome to the tip-calculator :octocat:, a cross-platform mini-software where yo
 working on it...
 
 ## Demo
-working on it...
+[![video demo](tipcalc-display-img.png)](https://youtu.be/53_-4U-qtWY)
 
 ## Tech/Framework Used
 <b>Built with</b>
