@@ -14,7 +14,7 @@ working on it...
 - [Python](https://www.python.org/)
 
 ## Features
-Surely, more features to come but as of now, the project runs fluidly across the ```macOS```platform. Feel free to open pull requests to pitch in some code for new features.
+Surely, more features to come but as of now, the project runs fluidly across the ```macOS```platform., it will calculate your total after tip and let you split it with friends. Feel free to open pull requests to pitch in some code for new features.
 
 ## Installation
 In order to get this mini-software on your operating system, head over to the [releases](https://github.com/vladyslavnUA/tip-calculator/releases) github page and download ```calc.zip```
@@ -22,7 +22,11 @@ When prompted whether to accept the file downloaded from the internet, click ```
 Once downloaded, ```unzip``` the file, ```double-click``` and the software will run.
 
 ## How to Use
-To use my program, simply open it(```double-click```) and it will run. Then follow the prompt to enter values.
+Once you download, 
+In the Finder on your Mac, locate the .exe file
+Control-click the app icon, then choose Open from the shortcut menu.
+
+The app is saved as an exception to your security settings, and you can open it in the future by double-clicking it just as you can any registered app.To use my program, simply open it(```double-click```) and it will run. Then follow the prompt to enter values.
 
 ## Contribute
 If you would like to contribute to the program, create a new [pull-request](https://github.com/vladyslavnUA/tip-calculator/pulls) and I will look at it.
